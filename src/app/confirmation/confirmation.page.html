@@ -1,0 +1,43 @@
+<ion-content class="content confirmation-page">
+  <div class="card-wrapper">
+    <ion-card class="confirmation-card">
+      <ion-icon name="checkmark-circle-outline" class="check-icon"></ion-icon>
+      <div class="confirmation-details">
+        <ion-label class="confirmation-label">Chosen Date: </ion-label>
+        <ion-text class="confirmation-text">{{ selectedDate }}</ion-text>
+      </div>
+
+      <div class="confirmation-details">
+        <ion-label class="confirmation-label">Chosen Agent: </ion-label>
+        <ion-item class="agent-item">
+          <ion-avatar slot="start">
+            <ion-icon name="person-circle"></ion-icon>
+          </ion-avatar>
+          <ion-label>
+            <h3 class="agent-name">{{ selectedAgent?.name }}</h3>
+            <p class="agent-info">
+              <ion-icon name="document-text-outline"></ion-icon> ID: {{ selectedAgent?.id }}
+            </p>
+            <p class="agent-info">
+              <ion-icon name="mail-outline"></ion-icon> Email: {{ selectedAgent?.email }}
+            </p>
+            <p class="agent-info">
+              <ion-icon name="call-outline"></ion-icon> Contact: {{ selectedAgent?.contactNumber }}
+            </p>
+          </ion-label>
+        </ion-item>
+      </div>
+      <div class="countdown" (click)="redirectToHome2()">
+        <p class="countdown-text" [hidden]="countdown === 0">
+          Redirecting to Home in {{ countdown }} seconds
+        </p>
+        <p class="countdown-text" [hidden]="countdown == 0">
+          click to redirect shortly
+        </p>
+        <p class="countdown-text" [hidden]="countdown !== 0">
+          Redirecting to Home...
+        </p>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

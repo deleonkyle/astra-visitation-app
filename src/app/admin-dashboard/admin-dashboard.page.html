@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Admin Dashboard</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()" class="logout-button">
+        <ion-icon name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="dashboard-container">
+    <ion-row class="profile-row">
+      <ion-col size="auto">
+        <ion-avatar class="profile-avatar">
+          <ion-img src="assets/icon/user.png"></ion-img>
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="auto" class="profile-info">
+        <h3>Admin</h3>
+        <p>{{ getCurrentDateTime() }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="dashboard-buttons">
+        <ion-button expand="block" (click)="navigateTo('admin-listing')" class="dashboard-button">
+          Admin Listing
+        </ion-button>
+        <ion-button expand="block" (click)="navigateTo('user-management')" class="dashboard-button">
+          User Management
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,60 @@
+.confirmation-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .confirmation-card {
+    background-color: lightgreen;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .check-icon {
+    font-size: 64px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-details {
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .agent-item {
+    --padding-start: 0;
+  }
+  
+  .agent-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .agent-info {
+    font-size: 14px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .agent-info ion-icon {
+    margin-right: 5px;
+  }
+.countdown-text{
+    font-family: monospace;
+    font: italic;
+}  
+ion-content {
+    --ion-background-color: #F7F1E5;
+}

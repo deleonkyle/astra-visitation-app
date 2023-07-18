@@ -1,0 +1,113 @@
+ion-header {
+    --background: #F7F1E5;
+
+    ion-toolbar {
+      --background: #F7F1E5;
+      --color: #4C4B16;
+    }
+  }
+  .custom-card {
+    background-color: #f9f2f2; /* Replace with your desired background color */
+  }
+.ion-text-center{
+  text-align: center!important;
+  background-color: #F7F1E5;
+}  
+ion-page{
+  --ion-background-color: #F7F1E5;
+}
+
+ion-app{
+  --ion-background-color: #F7F1E5;
+}
+  
+  ion-content {
+    --ion-background-color: #F7F1E5; /* Set the background color of the content area */
+    --ion-padding-bottom: env(safe-area-inset-bottom); /* Add padding at the bottom to avoid overlapping with the footer */
+  
+    display: block;
+    overflow-y: auto; /* Enable vertical scrolling for the content */
+    height: calc(100% - 56px); /* Adjust the height to leave space for the header */
+  }
+  
+  
+  ion-list {
+    ion-item.favorite-item {
+      ion-label {
+        --color: #4C4B16;
+        font-family: monospace;
+        
+      }
+      
+      ion-button {
+        --color: #FFFFFF;
+        --background: #d11616;
+        margin-left: 8px;
+      }
+    }
+  }
+  
+  ion-button {
+    margin-top: 8px;
+  --background: #E7B10A;
+  --background-hover: #45A049;
+  --color: #4C4B16;
+  --background-activated: #a1a1a1;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  ion-footer {
+    --ion-background-color: #ffffff;
+  }
+  
+  ion-tabs {
+    ion-tab-button {
+      --color-selected: #E7B10A;
+    }
+  }
+  
+  ion-tab-bar {
+    ion-tab-button {
+      --color: #4C4B16;
+      --color-selected: #E7B10A;
+      --background-activated: #a1a1a1;
+    }
+  }
+  
+  ion-tab-bar ion-icon {
+    --color: #4C4B16;
+  }
+  
+  ion-tab-bar ion-icon[name="heart"] {
+    color: #E7B10A; 
+  }
+  .back-button {
+    display: flex;
+    align-items: center;
+    color: #E7B10A;
+    --background-activated: #a1a1a1;
+  }
+  
+  .back-icon {
+    font-size: 24px;
+  }
+  
+  .back-label {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+  ng-template{
+    --ion-background-color: #F7F1E5;
+  }
+  .no-houses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: gray;
+  }
+  

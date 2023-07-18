@@ -1,0 +1,36 @@
+<ion-content class="ion-padding">
+  <div class="admin-login-logo">
+    <img src="assets/icon/user.png" alt="Admin Logo">
+  </div>
+
+  <ion-item>
+    <ion-input
+      type="email"
+      label="Admin Email"
+      labelPlacement="floating"
+      [(ngModel)]="email"
+    ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      type="{{ showPassword ? 'text' : 'password' }}"
+      label="Admin Password"
+      labelPlacement="floating"
+      [(ngModel)]="password"
+    ></ion-input>
+    <ion-icon
+      name="{{ showPassword ? 'eye-off' : 'eye' }}"
+      item-right
+      (click)="toggleShowPassword()"
+    ></ion-icon>
+  </ion-item>
+
+  <ion-button expand="full" (click)="login()" class="admin-login-button">Log In as Admin</ion-button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="ion-text-center">
+    <p>&copy; 2023 Astra Realty. All rights reserved.</p>
+  </ion-toolbar>
+</ion-footer>

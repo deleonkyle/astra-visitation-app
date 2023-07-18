@@ -1,0 +1,60 @@
+<ion-content class="ion-padding">
+  <div class="profile-picture">
+    <ion-avatar>
+      <ion-img [src]="profilePicture"></ion-img>
+    </ion-avatar>
+    <input type="file" accept="image/*" #profilePictureInput style="display: none" (change)="handleProfilePictureChange($event)" />
+    <ion-icon name="camera" (click)="profilePictureInput.click()" class="choose-picture-button"> </ion-icon>
+  </div>
+
+  <ion-item>
+    <ion-input
+      type="text"
+      label="Fullname"
+      labelPlacement="floating"
+      [(ngModel)]="fullname"
+    ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      type="email"
+      label="Email"
+      labelPlacement="floating"
+      [(ngModel)]="email"
+    ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      type="{{ showPassword ? 'text' : 'password' }}"
+      label="Password"
+      labelPlacement="floating"
+      [(ngModel)]="password"
+    ></ion-input>
+    <ion-icon
+      name="{{ showPassword ? 'eye-off' : 'eye' }}"
+      item-right
+      (click)="toggleShowPassword()"
+    ></ion-icon>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      type="{{ showConfirmPassword ? 'text' : 'password' }}"
+      label="Confirm Password"
+      labelPlacement="floating"
+      [(ngModel)]="confirmPassword"
+    ></ion-input>
+    <ion-icon
+      name="{{ showConfirmPassword ? 'eye-off' : 'eye' }}"
+      item-right
+      (click)="toggleShowConfirmPassword()"
+    ></ion-icon>
+  </ion-item>
+
+  <ion-button expand="full" (click)="signUp()">Sign Up</ion-button>
+  <div class="login-link">
+    <p>Already have an account? <ion-router-link routerLink="/login" routerDirection="forward">Log In</ion-router-link></p>
+  </div>
+</ion-content>

@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Maps
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home2" fill="clear" class="back-button">
+        <ion-icon name="arrow-back" class="back-icon"></ion-icon>
+        <span class="back-label">Back</span>
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="map" class="map"></div>
+  <div class="zoom-button">
+  <ion-icon name="add-circle-outline" expand="full" (click)="zoomIn()">Zoom In</ion-icon>
+  <ion-icon name="remove-circle-outline" expand="full" (click)="zoomOut()">Zoom Out</ion-icon>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button routerLink="/home2" routerLinkActive="active">
+          <ion-icon name="home-outline"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        <ion-tab-button routerLink="/favorites" routerLinkActive="active">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-label>Favorites</ion-label>
+        </ion-tab-button>
+        <ion-tab-button routerLink="/maps" routerLinkActive="active">
+          <ion-icon name="map"></ion-icon>
+          <ion-label>Maps</ion-label>
+        </ion-tab-button>
+        <ion-tab-button routerLink="/profile" routerLinkActive="active">
+          <ion-icon name="person-outline"></ion-icon>
+          <ion-label>Profile</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>    
+  </ion-toolbar>
+</ion-footer>

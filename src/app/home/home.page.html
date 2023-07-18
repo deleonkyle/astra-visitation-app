@@ -1,0 +1,35 @@
+<ion-content class="ion-padding">
+  <swiper-container
+  (slidechange)="swiperSlideChanged($event)"
+  [loop]="true"
+  [pagination]="true">
+  <swiper-slide> 
+    <ion-img
+  src="/assets/icon/houses.png"
+  alt="manor"></ion-img>
+  <h1>Seamless Property Visitation</h1>
+  <p>Book property visitations effortlessly and experience a smooth and convenient touring process.</p>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-img
+  src="/assets/icon/add-event.png"
+  alt="manor"></ion-img>
+  <h1>Intelligent Scheduling</h1>
+  <p> Simplify agent scheduling and ensure efficient management of property tours, maximizing productivity.</p>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-img
+  src="/assets/icon/address-location.png"
+  alt="manor"></ion-img>
+  <h1>Advanced Mapping Solutions</h1>
+  <p> Navigate through properties with ease using our integrated mapping technology, enabling you to locate properties accurately.</p>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-img src="assets/icon/astralogo.png" alt="Home Explore">
+    </ion-img>
+    <h1>Welcome to the Astra Visitation: App!</h1>
+    <p>Discover your dream home and book it effortlessly with our app.</p>
+    <ion-button expand="full" routerLink="/login">Get Started</ion-button>
+    <ion-button expand="full" routerLink="/admin-login">Admin Login</ion-button>
+  </swiper-slide>
+</swiper-container>

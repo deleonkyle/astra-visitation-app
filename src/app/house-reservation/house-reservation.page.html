@@ -1,0 +1,29 @@
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/manor-details"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="header-title">House Reservation</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="content">
+    <div class="reservation-form">
+      <ion-item class="date-item">
+        <ion-datetime
+          [isDateEnabled]="isWeekday"
+          locale="en-GB-u-hc-h12"
+          [(ngModel)]="selectedDate"
+          displayFormat="YYYY-MM-DD HH:mm"
+          pickerFormat="DD MMM YYYY HH:mm"
+          class="date-picker"
+        > <span slot="title">Select a Visitation Date</span></ion-datetime>
+      </ion-item>
+
+      <ion-button expand="block" (click)="confirmReservation()" class="confirm-button">
+        Confirm
+      </ion-button>
+    </div>
+
+    
+  </ion-content>

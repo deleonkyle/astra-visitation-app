@@ -1,0 +1,30 @@
+ion-header {
+    --background: #F7F1E5;
+
+    ion-toolbar {
+      --background: #F7F1E5;
+      --color: #4C4B16;
+    }
+}
+ion-content {
+    --ion-background-color: #F7F1E5; /* Set the background color of the content area */
+}
+.back-button {
+    display: flex;
+    align-items: center;
+    color: #E7B10A;
+    --background-activated: #a1a1a1;
+  }
+  
+  .back-icon {
+    font-size: 24px;
+  }
+  
+  .back-label {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+  .delete-button{
+    color: #c51717;
+  }
+  

@@ -1,0 +1,146 @@
+ion-content {
+  --ion-background-color: #F7F1E5;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.notification-button {
+  margin-left: 10px;
+  --color: #4C4B16;
+  --background-activated: #a1a1a1;;
+}
+.search-bar {
+  padding: 16px;
+  background-color: #F7F1E5;
+}
+
+ion-searchbar {
+  --background: #FFFFFF;
+  --searchbar-input-background: #F7F1E5;
+  --searchbar-input-border-color: #E7B10A;
+  --searchbar-input-border-radius: 10px;
+  --color: #4C4B16;
+  --placeholder-color: #888;
+  --cancel-button-color: #4C4B16;
+}
+
+ion-label h2 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  font-family: monospace;
+}
+
+ion-label p {
+  font-size: 12px;
+  color: #888;
+  font-family: monospace;
+}
+
+ion-footer {
+  --ion-background-color: #ffffff;
+}
+
+ion-tab-bar ion-icon {
+  --color: #4C4B16;
+}
+
+ion-tab-bar ion-icon[name="home"] {
+  color: #E7B10A;
+}
+
+ion-card {
+  --background: #ffffff;
+  --color: #4C4B16;
+}
+
+ion-card-title {
+  --color: #4C4B16;
+  font-family: monospace;
+}
+
+ion-card-subtitle {
+  --color: #d1fff8;
+}
+ion-img {
+  margin: 0 auto;
+  display: block;
+}
+.thumbnail-large {
+  width: 120px;
+  height: 120px;
+}
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  --background: #F7F1E5;
+}
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  --background: #F7F1E5;
+  --background-activated: #F7F1E5;
+   font-size: 20px;
+  color: #626060;
+}
+.favorite-button.active ion-icon {
+  color: #d11b1b; /* Set the color for the heart icon when active */
+}
+
+
+.details-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin-top: 8px;
+  --background: #E7B10A;
+  --color: #4C4B16;
+  --background-activated: #a1a1a1;;
+}
+.category-button {
+  --background: #E7B10A;
+  background-color: #F7F1E5;
+  color: #4C4B16;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+ }
+
+.category-button.active {
+  --background: #FFD700;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+.notification-button {
+  color: #E7B10A;
+  font-size: 20px;
+}
+.notification-badge {
+  position: absolute;
+  top: 8px;
+  right: -5px;
+  background-color: #d52525;
+  color: #fff;
+  font-size: 8px;
+  font-weight: bold;
+  padding: 3px 5px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+

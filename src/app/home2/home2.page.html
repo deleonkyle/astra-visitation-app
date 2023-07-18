@@ -1,0 +1,108 @@
+<ion-content>
+  <div class="header">
+    <ion-searchbar id="search-bar" placeholder="Search" (ionChange)="handleSearch($event)"></ion-searchbar>
+    <ion-button class="notification-button" (click)="openNotificationModal()" fill="clear">
+      <ion-icon name="notifications"></ion-icon>
+      <ion-badge *ngIf="notificationCount > 0" class="notification-badge">{{ notificationCount }}</ion-badge>
+      <ion-badge class="notification-badge"></ion-badge>
+    </ion-button>    
+  </div>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col size="auto" *ngFor="let category of categories">
+        <ion-button
+        (click)="toggleCategory(category)"
+        fill="clear"
+        class="category-button"
+        [class.active]="category.showItems"
+      >
+        {{ category.name }}
+      </ion-button>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ng-container *ngFor="let category of categories">
+    <ion-list *ngIf="category.showItems && !noResultsFound">
+      <ion-list-header>
+        {{ category.name }}
+      </ion-list-header>
+
+      <ion-item *ngFor="let item of category.items" [hidden]="item.name.toLowerCase() !== searchTerm">
+        <ion-thumbnail slot="start">
+          <ion-img [src]="item.image" [alt]="item.name"></ion-img>
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{ item.name }}</h2>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="auto">
+                <ion-icon name="file-outline"></ion-icon>
+                <p>{{ item.description }}</p>
+              </ion-col>
+              <ion-col size="5">
+                <ion-icon name="bed-outline"></ion-icon>
+                <p>{{ item.bedrooms }} Bedrooms</p>
+              </ion-col>
+              <ion-col size="5">
+                <ion-icon name="car-outline"></ion-icon>
+                <p>{{ item.parking }} Parking Spaces</p>
+              </ion-col>
+              <ion-col size="5">
+                <ion-icon name="water-outline"></ion-icon>
+                <p>{{ item.bathrooms }} Bathrooms</p>
+              </ion-col>
+              <ion-col size="5">
+                <ion-icon name="location-outline"></ion-icon>
+                <p>{{ item.location }} </p>
+              </ion-col>
+              <ion-col size="5">
+                <ion-icon name="location-outline"></ion-icon>
+                <p>{{ item.location }} </p>
+              </ion-col>
+              <ion-col size="5">
+                <ion-icon name="pricetag-outline"></ion-icon>
+                <p>{{ item.price }} </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-button class="details-button" [routerLink]="item.detailsLink">Details</ion-button>
+        </ion-label>
+        <ion-button (click)="toggleFavorite(item.name)" expand="block" [class.active]="isFavorite(item.name)" class="favorite-button">
+          <ion-icon name="heart"></ion-icon>
+        </ion-button>            
+      </ion-item>
+    </ion-list>
+  </ng-container>
+
+  <ion-item *ngIf="noResultsFound">
+    Nothing found.
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button routerLink="/home2" routerLinkActive="active">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        <ion-tab-button routerLink="/favorites" routerLinkActive="active">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-label>Favorites</ion-label>
+        </ion-tab-button>
+        <ion-tab-button routerLink="/maps" routerLinkActive="active">
+          <ion-icon name="map-outline"></ion-icon>
+          <ion-label>Maps</ion-label>
+        </ion-tab-button>
+        <ion-tab-button routerLink="/profile" routerLinkActive="active">
+          <ion-icon name="person-outline"></ion-icon>
+          <ion-label>Profile</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>    
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,118 @@
+ion-content {
+    --ion-background-color: #F7F1E5;
+  }
+  ion-title{
+    color: #4C4B16;
+  }
+  .back-button {
+    display: flex;
+    align-items: center;
+    color: #4C4B16;
+  }
+  
+  .back-icon {
+    font-size: 24px;
+  }
+  
+  .back-label {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+.house-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .house-title {
+    font-family: monospace;
+    color: #4C4B16;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .details-grid {
+    margin-top: 20px;
+  }
+  
+  .details-icon {
+    font-size: 28px;
+    color: #4C4B16;
+  }
+  
+  .details-label {
+    font-family: monospace;
+    font-size: 16px;
+    color: #4C4B16;
+  }
+  
+  .book-now-button {
+    margin-top: 30px;
+  }
+  .house-measurements{
+    font-family: monospace;
+    font-size: 16px;
+    color: #4C4B16;
+  }
+  .house-info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .house-description {
+    font-size: 16px;
+    color: #4C4B16;
+  }
+  
+  .house-measurements {
+    margin-top: 10px;
+    padding-left: 15px;
+  }
+  
+  .pricing-grid {
+    margin-top: 20px;
+  }
+  
+  .pricing-label {
+    font-size: 16px;
+    color: #4C4B16;
+  }
+  
+  .pricing-value {
+    font-size: 16px;
+    color: #4C4B16;
+    font-weight: bold;
+  }
+  
+  .amortization-list {
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-type: none;
+    font-size: 16px;
+    color: #4C4B16;
+  }
+  .requirements-section {
+    margin-top: 20px;
+    padding-left: 15px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4C4B16;
+    margin-bottom: 10px;
+  }
+  
+  .requirements-list {
+    padding-left: 15px;
+    list-style-type: disc;
+    font-size: 16px;
+    color: #4C4B16;
+  }
+  .book-now-fab {
+    --background: #E7B10A;
+    --color: #4C4B16;
+  }

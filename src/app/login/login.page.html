@@ -1,0 +1,51 @@
+<ion-content class="ion-padding">
+
+  <div class="guest-login">
+    <ion-router-link routerLink="/login" routerDirection="forward">
+      <ion-img src="assets/icon/user.png"></ion-img>
+      Guest
+    </ion-router-link>
+  </div>
+
+  <div class="login-logo">
+    <img src="assets/icon/astralogo.png" alt="Astra Realty Logo">
+  </div>
+
+    <ion-item>
+      <ion-input
+      type="email"
+      label="Email"
+      labelPlacement="floating"
+      [(ngModel)]="email"
+    ></ion-input>
+  </ion-item>
+    
+  <ion-item>
+    <ion-input
+      type="{{ showPassword ? 'text' : 'password' }}"
+      label="Password"
+      labelPlacement="floating"
+      [(ngModel)]="password"
+    ></ion-input>
+    <ion-icon
+      name="{{ showPassword ? 'eye-off' : 'eye' }}"
+      item-right
+      (click)="toggleShowPassword()"
+    ></ion-icon>
+  </ion-item>
+  
+  <ion-button expand="full" (click)="login()">Log In</ion-button>
+
+  <div class="forgot-password">
+    <ion-router-link routerLink="/forgot-password" routerDirection="forward">Forgot Password?</ion-router-link>
+  </div>
+  <div class="signup-link">
+    <p>Don't have an account? <ion-router-link routerLink="/signup" routerDirection="forward">𝐒𝐢𝐠𝐧 𝐔𝐩</ion-router-link></p>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="ion-text-center">
+    <p>&copy; 2023 Astra Realty. All rights reserved.</p>
+  </ion-toolbar>
+</ion-footer>

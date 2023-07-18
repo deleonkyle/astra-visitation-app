@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Admin Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="dashboard-content">
+  <div class="card-container">
+    <!-- User Management Section -->
+    <ion-card class="dashboard-card">
+      <ion-card-header>
+        <ion-card-title>User Management</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let user of users">
+            <ion-label>{{ user.name }}</ion-label>
+          </ion-item>
+        </ion-list>
+        <ion-button expand="full" (click)="navigateToUserManagement()">Manage Users</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Property Listing Section -->
+    <ion-card class="dashboard-card">
+      <ion-card-header>
+        <ion-card-title>Property Listings</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let property of properties">
+            <ion-thumbnail slot="start">
+              <img [src]="property.image" alt="Property Image" />
+            </ion-thumbnail>
+            <ion-label>
+              <h2>{{ property.name }}</h2>
+              <p>{{ property.description }}</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+        <ion-button expand="full" routerLink="admin-listing">Add Property</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Agent Scheduling Section -->
+    <ion-card class="dashboard-card">
+      <ion-card-header>
+        <ion-card-title>Agent Schedules</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let schedule of agentSchedules">
+            <ion-label>{{ schedule.agentName }} - {{ schedule.date }}</ion-label>
+          </ion-item>
+        </ion-list>
+        <ion-button expand="full" (click)="navigateToAgentSchedule()">Manage Agent Schedule</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

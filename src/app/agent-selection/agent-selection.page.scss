@@ -1,0 +1,56 @@
+ion-header {
+    --background: #F7F1E5;
+  }
+  
+  ion-toolbar {
+    --background: #F7F1E5;
+    --color: #ffffff;
+  }
+  
+  .header-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .chosen-date {
+    margin-top: 20px;
+    background-color: #F7F1E5;
+    padding: 10px;
+  }
+  
+  .chosen-date-label {
+    font-weight: bold;
+  }
+  
+  .agent-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .confirm-button {
+    margin-top: 20px;
+    --background: #E7B10A;
+    --color: #ffffff;
+  }
+ion-content {
+    --ion-background-color: #F7F1E5;
+  }
+  ion-title{
+    color: #4C4B16;
+    text-align:center;
+  }
+  .back-button {
+    display: flex;
+    align-items: center;
+    color: #E7B10A;
+    --background-activated: #a1a1a1;
+  }
+  
+  .back-icon {
+    font-size: 24px;
+  }
+  
+  .back-label {
+    margin-left: 5px;
+    font-size: 16px;
+  }

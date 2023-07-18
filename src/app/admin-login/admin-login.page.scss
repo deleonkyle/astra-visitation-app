@@ -1,0 +1,55 @@
+ion-content {
+    --ion-background-color: #F7F1E5;
+  }
+  
+  .admin-login-logo {
+    text-align: center;
+    max-width: 20px;
+    margin-left: 0;
+    left: 100px;
+  }
+  
+  .login-logo img {
+    max-width: 20px;
+  }
+  
+  ion-item {
+    margin-top: 20px;
+  }
+  
+  ion-button {
+    margin-top: 30px;
+    --background: #E7B10A;
+    --background-hover: #45A049;
+    --color: #4C4B16;
+    --background-activated: #a1a1a1;
+  }
+  
+  .forgot-password,
+  .signup-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-link p {
+    margin-bottom: 0;
+  }
+  
+  .signup-link ion-router-link {
+    color: #4C4B16;
+    text-decoration: none;
+  }
+  p{
+    color: #4C4B16;
+  }
+  ion-label{
+    color: #4C4B16;
+  }
+  ion-footer{
+    --ion-background-color:#F7F1E5;
+  }
+  .guest-login{
+    max-width: 30px;
+    font-size: 11px;
+    color: #4C4B16;
+  }

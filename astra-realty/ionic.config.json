@@ -1,0 +1,7 @@
+{
+  "name": "astra-realty",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

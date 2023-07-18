@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()" class="modal-close-button">
+        <ion-icon name="close-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="modal-content">
+    <div class="notification-grid">
+      <div class="notification-item">
+        <ion-icon name="calendar" class="notification-icon"></ion-icon>
+        <div class="notification-details">
+          <p class="notification-title">Visitation Scheduled</p>
+          <p class="notification-description">Your visitation is scheduled for <strong>{{ selectedDate }}</strong>.</p>
+          <p class="notification-description">You will be assisted by <strong>{{ selectedAgent?.name }}</strong>.</p>
+        </div>
+      </div>
+      <div class="notification-line"></div>
+
+      <div class="notification-item">
+        <ion-icon name="document-text" class="notification-icon"></ion-icon>
+        <div class="notification-details">
+          <p class="notification-title">Important Documents</p>
+          <p class="notification-description">Please bring the following documents for your visitation:</p>
+          <ul class="notification-list">
+            <li>Proof of identification</li>
+            <li>Proof of address</li>
+            <li>Financial statements</li>
+          </ul>
+        </div>
+      </div>
+      <div class="notification-line"></div>
+
+      <div class="notification-item">
+        <ion-icon name="alarm" class="notification-icon"></ion-icon>
+        <div class="notification-details">
+          <p class="notification-title">Reminder</p>
+          <p class="notification-description">A friendly reminder for your upcoming visitation:</p>
+          <p class="notification-description">Date: <strong>{{ selectedDate }}</strong></p>
+          <p class="notification-description">Agent: <strong>{{ selectedAgent?.name }}</strong></p>
+        </div>
+      </div>
+      <div class="notification-line"></div>
+
+      <div class="notification-item">
+        <ion-icon name="information-circle" class="notification-icon"></ion-icon>
+        <div class="notification-details">
+          <p class="notification-title">Update</p>
+          <p class="notification-description">Important update regarding your visitation:</p>
+          <p class="notification-description">Please note the change in date:</p>
+          <p class="notification-description">New Date: <strong>August 15, 2023</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

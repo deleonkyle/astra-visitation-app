@@ -1,0 +1,60 @@
+ion-content {
+    --ion-background-color: #F7F1E5;
+  }
+  ion-header {
+    --background: #F7F1E5;
+
+    ion-toolbar {
+      --background: #F7F1E5;
+      --color: #4C4B16;
+    }
+  }
+ion-footer {
+    --ion-background-color: #ffffff;
+  }
+  
+  ion-tab-bar {
+    ion-tab-button {
+      --color: #4C4B16;
+      --color-selected: #E7B10A;
+      --background-activated: #a1a1a1;
+    }
+  }
+  
+  ion-tab-bar ion-icon {
+    --color: #4C4B16;
+  }
+  
+  ion-tab-bar ion-icon[name="map"] {
+    color: #E7B10A;
+  }
+  #map {
+    height: 400px; 
+    width: 100%; 
+  }
+  .zoom-button{
+    position: absolute!important;
+    left: 0;
+    bottom: 0;
+    margin-left: 160px;
+    bottom: 180px;
+    font-size: 28px;
+  }
+  .back-button {
+    display: flex;
+    align-items: center;
+    color: #E7B10A;
+    --background-activated: #a1a1a1;
+  }
+  
+  .back-icon {
+    font-size: 24px;
+  }
+  
+  .back-label {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+  
+  
+  
